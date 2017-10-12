@@ -1,0 +1,39 @@
+body {
+     margin:0px;
+     padding:0px;	 
+}
+
+.form_container {
+	background-image: url(bg-image.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.input_container {
+	width:65%;
+	margin:20px auto;
+	border: 5px solid #fff;
+	border-radius:10px;
+    padding: 20px;
+	background-color: #f98d3c;
+	transition:all 1s cubic-bezier(.99,.99,0,.01);
+}
+
+.input_container .row .col-md-6.col-sm-6.col-xs-6 {
+	margin-bottom:10px;
+}
+
+.input_container label {
+	color:#fff;
+}
+
+.input_container.get-in {
+	transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.input_container.get-out {
+	transform: scale(1.1);
+    opacity: 1;
+}

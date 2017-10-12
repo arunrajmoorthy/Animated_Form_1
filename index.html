@@ -1,0 +1,85 @@
+<html>
+
+     <head>
+	 
+	     <title> JS Multi Column Grid Layout </title>
+
+		 
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		 
+
+		 
+		 <link rel="stylesheet" href="style.css">
+		
+		
+				 
+		
+	 </head>
+	 
+	 <body class="form_container">
+	      
+		 
+		   <div class="input_container" id="input_container">
+		     <form class="row">
+			      <label class="col-md-6 col-sm-6 col-xs-6 label-style"> Name </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6 label-style"> Address </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6 label-style"> Contact </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			 </form>
+		  </div>	 
+	      <div class="input_container">
+		     <form class="row">
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Name </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Address </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Contact </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			 </form>
+		  </div>	 
+		 <div class="input_container">
+		     <form class="row">
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Name </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Address </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Contact </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			 </form>
+		  </div>
+
+         <div class="input_container">
+		     <form class="row">
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Name </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Address </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Contact </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			 </form>
+		  </div>
+
+         <div class="input_container">
+		     <form class="row">
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Name </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Address </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			      <label class="col-md-6 col-sm-6 col-xs-6"> Contact </label> <div class="col-md-6 col-sm-6 col-xs-6"> <input type="text"> </div>
+			 </form>
+		  </div>	
+
+         <button class="button"> Hi cick me </button>		  
+		 
+		 
+		 <script>
+				
+				$(document).ready(function(){
+					 
+				     $(".input_container").mouseover(function(){
+					       $(this).addClass('get-out');
+						   $(this).siblings().removeClass('get-out').addClass("get-in");
+						  
+					 }).mouseleave(function(){
+					        $(this).removeClass('get-out');
+							$(this).siblings().removeClass('get-in');
+					 });
+				});
+		 
+		 </script>
+
+	 
+	 </body>
+
+
+</html>
